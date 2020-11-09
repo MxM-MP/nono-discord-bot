@@ -45,6 +45,9 @@ client.on("message", function (message) {
         message.reply(`tu reprendras bien un peu de chuck norris : ${response.data.value}`);
       });
   }
+  else if (command === "waza") {
+     message.reply(`WAAAAAAAAAZAAAAAAAAAAA`);
+  }
   else if (command === "kaamelott" && db['kaamelott']) {
     clearTimeout(kaamelottTimer);
     kaamelottTimer = setTimeout(() => {
